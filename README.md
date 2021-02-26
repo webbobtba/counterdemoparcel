@@ -1,5 +1,12 @@
 # counterdemoparcel
 HMR demo with parcel
 
-# Installation
+## Install
+
+```js
 npm install
+```
+
+```js
+npm start
+```
