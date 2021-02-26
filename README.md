@@ -1,7 +1,7 @@
 # counterdemoparcel
 HMR demo with parcel (very cool)
 
-> Module sind ein Gericht, dass am besten heiß serviert wird. (Konfuzius)
+> Module sind ein Gericht, das am besten heiß serviert wird. (Konfuzius)
 
 ## Install
 
