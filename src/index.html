@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Counter Demo</title>
     <link rel="stylesheet" href="index.less">
 </head>
 <body>
 
-    oh hi
+<h1 class="headline">Counter Demo</h1>
 
-    <div x-data="{
+<div class="counter"
+    x-data="{
         counter: 0,
         increment () {
             this.counter++
@@ -19,12 +20,19 @@
         decrement () {
             this.counter--
         }
-    }">
-        <button x-on:click="decrement()">-</button>
-        <strong><big x-text="counter"></big></strong>
-        <button x-on:click="increment()">+</button>
-    </div>
-
+    }"
+    x-on:keydown.escape.document="console.log('escape')"
+    x-on:keydown.-.document="decrement()"
+    x-on:keydown.+.document="increment()"
+>
+    <button class="counter__button counter__button--decrement"
+        x-on:click="decrement()"
+    >-</button>
+    <div class="counter__counter" x-text="counter"></div>
+    <button class="counter__button counter__button--increment"
+        x-on:click="increment()"
+    >+</button>
+</div>
 
 <script src="index.js"></script>
 </body>

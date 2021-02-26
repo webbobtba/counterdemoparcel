@@ -1,13 +1,66 @@
 // out: null
 
-@bg: wheat;
+@color-background: wheat;
+@color-foreground: blueviolet;
 
 body {
-    background-color: @bg;
-    font-size: 72px;
-    color: blueviolet;
     margin: 0;
     display: grid;
-    min-height: 100vh;
     place-content: center;
+    min-height: 100vh;
+    background-color: @color-background;
+
+    color: @color-foreground;
+    font-family: "Fira Code", monospace;
+}
+
+button {
+    border: 0;
+    font-family: inherit;
+}
+
+.headline {
+    font-family: "Dancing Script", sans-serif;
+    font-size: 4em;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    &__button {
+        outline: 0;
+        padding: 0.25em 0.5em;
+        background-color: @color-foreground;
+
+        color: white;
+        font-size: 2em;
+
+        box-shadow: 0 2px 8px -4px fade(black, 50%);
+
+        &--decrement {
+            border-radius: 16px 0 0 16px;
+        }
+        &--increment {
+            border-radius: 0 16px 16px 0;
+        }
+
+        &:active {
+            background-color: lighten(@color-foreground, 10%);
+        }
+    }
+
+    &__counter {
+        min-width: 3ch;
+        padding: 0.25em;
+        background-color: white;
+
+        font-size: 5em;
+        font-weight: bold;
+        text-align: center;
+
+        border-radius: 20px;
+        box-shadow: 0 2px 8px -4px fade(black, 50%);
+    }
 }

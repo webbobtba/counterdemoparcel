@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fontsource/dancing-script": "^4.2.1",
+    "@fontsource/fira-code": "^4.2.1",
     "alpinejs": "^2.8.1",
     "parcel": "^1.12.4"
   },
