@@ -1,14 +1,19 @@
 # counterdemoparcel
-HMR demo with parcel
+HMR demo with parcel (very cool)
 
 ## Install
 
-Get node modules:
+1. Clone repo:
+```js
+git clone https://github.com/webbobtba/counterdemoparcel.git
+```
+
+2. Get dependencies:
 ```js
 npm install
 ```
 
-Start parcel live server:
+3. Start parcel:
 ```js
 npm start
 ```
